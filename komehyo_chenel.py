@@ -92,7 +92,7 @@ def find_category(soup):
         category_str = ""
         for cat in category_list:
             category_str += cat.text.replace("\n", "") + " > "
-        return category_list
+        return category_str
     return ""
 
 def find_image(soup):
